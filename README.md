@@ -11,13 +11,15 @@
 # 大架構
 
 以天主教的`七原罪`來區分七大功能  
-1. 怠惰：選課小幫手(cal)、課程心得(feedback)、tiagenda、行事曆
+1. 怠惰：課程類功能
+ * 專案：[選課小幫手&行事曆(cal)](http://github.com/stufinite/cal)、[課程心得(feedback)](https://github.com/Stufinite/feedback_django)、[tiagenda](https://github.com/Stufinite/tiagenda)、[cphelper(選課查詢api)](https://github.com/Stufinite/cphelper)、[curso(課程搜尋引擎) ](https://github.com/Stufinite/curso)
  * 核心價值：一開始就只是覺得學校選課也太麻煩了吧  
    要拿一張紙抄抄寫寫的  所以我們要謹記  
    這個功能是滿足學生的`怠惰`  
    往後我們在新增功能時，如果發生爭執  或是收到負評（像是辦帳號）
    記得要依照核心價值 `怠惰` 去設計我們的服務
 2. 暴食：今天吃什麼
+  * 專案：[inferno（論壇框架+訂餐網頁版）](https://github.com/Stufinite/inferno)、[gluttony(訂餐api)](https://github.com/Stufinite/gluttony)、[time2eat-Android版](https://github.com/Stufinite/Time2eat-Android)、[time2eat印表機模組](https://github.com/Stufinite/Time2eat-printer)
   * 核心價值：學生吃飯的痛苦有兩點
       1. 每天都在苦惱要吃什麼  
       2. 尖峰時段用餐要等很久
@@ -49,10 +51,41 @@
    sloth-> cal;
    sloth-> tiagenda;
    sloth-> feedback;
-   gluttony -> time2eat;
+   sloth-> cphelper;
+   sloth-> curso;
+   gluttony -> inferno;
+   gluttony -> gluttonyTw;
+   gluttony -> "time2eat-Android";
+   gluttony -> "time2eat-printer";
    lust -> "Dating site";
    envy -> Game;
    pride -> intern  ;
    wrath -> forum;
+ }
+'/>
+
+# 爬蟲集合
+
+與全部共用：[ptt爬蟲](https://github.com/Stufinite/ptt-web-crawler)
+
+1. 怠惰：爬學校課程資訊、課程心得
+ * 專案：[scrawler(課程爬蟲)](https://github.com/Stufinite/scrawler)
+2. 暴食：爬餐廳資訊、鄉民的用餐心得
+  * 專案：[time2eat爬蟲](https://github.com/Stufinite/Time2eat-crawler)
+3. 色欲：
+4. 嫉妒：
+7. 傲慢：
+  * 核心價值：
+5. 貪心：
+  * 核心價值：
+6. 憤怒：
+
+架構圖如下：
+<img src='http://g.gravizo.com/g?
+ digraph G {
+   sloth-> scrawler;
+   sloth -> "ptt-web-crawler";
+   gluttony -> "time2eat-crawler";
+   gluttony -> "ptt-web-crawler";
  }
 '/>
