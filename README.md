@@ -85,11 +85,10 @@
 架構圖如下：
 
 ![Alt text](http://g.gravizo.com/g?
-  digraph G {
-    sloth-> cal;
-    sloth-> tiagenda;
- @@ -67,7 +64,8 @@
-    envy -> Game;
-    pride -> intern  ;
-    wrath -> forum;
-})
+digraph G {
+ sloth-> scrawler;
+ sloth -> "ptt-web-crawler";
+ gluttony -> "time2eat-crawler";
+ gluttony -> "ptt-web-crawler";
+}
+)
