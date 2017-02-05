@@ -49,7 +49,7 @@
 
 架構圖如下：
 
-<img src='http://g.gravizo.com/g?
+![Alt text](http://g.gravizo.com/g?
  digraph G {
    sloth-> cal;
    sloth-> tiagenda;
@@ -64,8 +64,7 @@
    envy -> Game;
    pride -> intern  ;
    wrath -> forum;
- }
-'/>
+ })
 
 # 爬蟲集合
 
@@ -84,11 +83,13 @@
 6. 憤怒：
 
 架構圖如下：
-<img src='http://g.gravizo.com/g?
- digraph G {
-   sloth-> scrawler;
-   sloth -> "ptt-web-crawler";
-   gluttony -> "time2eat-crawler";
-   gluttony -> "ptt-web-crawler";
- }
-'/>
+
+![Alt text](http://g.gravizo.com/g?
+  digraph G {
+    sloth-> cal;
+    sloth-> tiagenda;
+ @@ -67,7 +64,8 @@
+    envy -> Game;
+    pride -> intern  ;
+    wrath -> forum;
+})
